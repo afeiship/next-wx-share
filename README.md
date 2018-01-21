@@ -26,7 +26,7 @@ NxWxShare.share( NxWxApi.SHARE, {
   desc: '', // 分享描述
   link: '', // 分享链接
   imgUrl: '', // 分享图标
-}).then(({ status, data})=>{
+}).then(({ status, data })=>{
   // your codes goes here!
 });
 
