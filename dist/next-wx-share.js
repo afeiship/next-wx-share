@@ -16,11 +16,8 @@
                   success: function( data ){
                     resolve( { status:'success', data: data} );
                   },
-                  fail: function( data ){
-                    resolve( { status:'fail', data: data} );
-                  },
-                  complete: function( data ){
-                    resolve( { status:'complete', data: data } );
+                  cancel: function( data ){
+                    resolve( { status:'cancel', data: data} );
                   }
                 })
               )
