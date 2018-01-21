@@ -10,17 +10,17 @@
 
         wx.ready(function () {
           inTypes.forEach(function (item) {
-            return new Promise(function(resove, reject){
+            return new Promise(function(resolve, _){
               wx[item](
                 nx.mix( inOptions, {
                   success: function( data ){
-                    resove( { status:'success', data: data} );
+                    resolve( { status:'success', data: data} );
                   },
                   fail: function( data ){
-                    resove( { status:'fail', data: data} );
+                    resolve( { status:'fail', data: data} );
                   },
                   complete: function( data ){
-                    resolve( { status:'complete', data: data } )
+                    resolve( { status:'complete', data: data } );
                   }
                 })
               )
