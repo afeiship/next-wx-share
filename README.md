@@ -2,7 +2,20 @@
 > Wechat api for shart part.
 
 
-## resources:
+## usage:
+```js
+import NxWxShare from 'next-wx-share';
 
-## todos:
-- [ ] unit test case
+NxWxShare.share([
+  'onMenuShareTimeline',
+  'onMenuShareAppMessage'
+],{
+  title: '', // 分享标题
+  desc: '', // 分享描述
+  link: '', // 分享链接
+  imgUrl: '', // 分享图标
+}).then(({ status, data})=>{
+  
+});
+
+```
