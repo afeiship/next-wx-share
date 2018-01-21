@@ -2,7 +2,7 @@
 
   var global = global || this || self || window;
   var nx = global.nx || require('next-js-core2');
-  var _ = nx.import(['is']);
+  var wx = global.wx = global.wx;
 
   var NxWxShare = nx.declare('nx.WxShare', {
     statics: {
